@@ -9,152 +9,102 @@
     "@type": "EducationalOrganization",
     "name": "Zhev Education Abroad Consultancy",
     "url": "https://zheveducation.com/about.html",
-    "description": "Zhev Education is a trusted study abroad consultancy offering personalised counselling, admissions support, SOP/LOR drafting, visa guidance and university selection for students applying to USA, UK, Canada, Ireland, Australia and New Zealand.",
-    "founder": {
-      "@type": "Person",
-      "name": "Zhev Education Team"
-    },
-    "areaServed": "IN",
-    "knowsAbout": [
-      "study abroad consultants",
-      "study abroad guidance",
-      "study in USA",
-      "study in UK",
-      "study in Canada",
-      "study in Ireland",
-      "MS in Computer Science",
-      "MBA abroad",
-      "Data Science programs abroad",
-      "education consultancy India"
-    ],
-    "review": [
-      {
-        "@type": "Review",
-        "author": "Neha R",
-        "reviewBody": "Detailed guidance and clear timelines. I received an admission offer from my top choice university.",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5" }
-      },
-      {
-        "@type": "Review",
-        "author": "Vikram P",
-        "reviewBody": "My SOP and visa interview prep were handled exceptionally well. Highly recommended.",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5" }
-      },
-      {
-        "@type": "Review",
-        "author": "Shweta L",
-        "reviewBody": "Excellent coordination for documents and pre-departure support.",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5" }
-      }
-    ]
+    "logo": "assets/logo.png",
+    "description": "Zhev Education is a trusted study abroad consultancy offering personalised counselling, admissions support, SOP/LOR drafting, visa guidance and university selection for USA, UK, Canada, Ireland, Australia and Europe.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    }
   }
   </script>
 
   <link rel="canonical" href="https://zheveducation.com/about.html">
-  <meta name="google-site-verification" content="UDWz14iODOz9mqHBeFAhVdkxtOlqV3TghXXDoQKZwv4" />
 
-  <!-- SEO Meta Tags -->
   <title>About Zhev Education – Best Study Abroad Consultancy India</title>
-  <meta name="description" content="Learn about Zhev Education, one of India’s most trusted study abroad consultancies helping students with admissions, SOP/LOR, visas, and university shortlisting for USA, UK, Canada, Ireland and Australia.">
-  <meta name="keywords" content="about Zhev Education, study abroad consultants, overseas education consultants, study abroad India, study in USA, study in UK, MS in CS guidance, best study abroad consultants, international education consultancy">
-  <meta name="author" content="Zhev Education Consultancy">
+  <meta name="description" content="Zhev Education helps students study abroad with personalized guidance for USA, UK, Canada, Ireland, Australia and Europe. Learn about our mission and expertise.">
+  <meta name="keywords" content="about Zhev Education, study abroad consultants in Mumbai, overseas education consultants India">
 
-  <!-- Open Graph Tags -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="About Zhev Education – Study Abroad Consultancy India">
-  <meta property="og:description" content="We help students study abroad through personalised counselling, applications, SOP/LOR drafting, and visa filing support.">
-  <meta property="og:url" content="https://zheveducation.com/about.html">
-  <meta property="og:image" content="https://contactus328-ai.github.io/zheveducation/assets/og-image.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About Zhev Education – Trusted Study Abroad Consultants India">
-  <meta name="twitter:description" content="Expert study abroad guidance for students applying to USA, UK, Canada, Australia and Ireland.">
-  <meta name="twitter:image" content="https://contactus328-ai.github.io/zheveducation/assets/og-image.png">
+  <link rel="stylesheet" href="assets/style.css">
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    header {
+      background: #2F3A56;
+      padding: 15px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo { height: 60px; width: auto; }
+    header nav a { color: #fff; margin-left: 20px; text-decoration: none; }
+    .hamburger { display:none; font-size:30px; cursor:pointer; color:#fff; }
+
+    @media (max-width: 768px) {
+      nav { display:none; width:100%; background:#2F3A56; padding:10px; }
+      nav a { display:block; margin:10px 0; }
+      .hamburger { display:block; }
+    }
+  </style>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("mobileNav");
+      nav.style.display = nav.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
 </head>
 
 <body>
 
-  <header>
-    <h1>About Zhev Education</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="countries.html">Countries</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header>
+  <img src="assets/logo.png" alt="Zhev Education Logo" class="logo">
+  <span class="hamburger" onclick="toggleMenu()">☰</span>
+  <nav id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="countries.html">Countries</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <section>
-    <h2>Who We Are</h2>
-    <p>
-      Zhev Education is a leading study abroad consultancy helping students across India secure admissions to 
-      top-ranked universities worldwide. With deep expertise in international education systems, our counsellors 
-      guide students through every step of their journey – from university shortlisting to application submission, 
-      SOP & LOR drafting, interview preparation, visa filing and pre-departure support.
-    </p>
-    <p>
-      Over the years, we have helped hundreds of students successfully pursue programs in fields such as Computer Science, 
-      Data Science, Engineering, Business, Healthcare, Architecture, Design and more. Whether it is MS in Computer Science 
-      in the USA, MBA in the UK, Data Science programs in Canada, or high-value courses in Ireland and Australia, 
-      we provide customised guidance based on academic background, finances, and long-term goals.
-    </p>
-  </section>
+<section>
+  <h2>Who We Are</h2>
+  <p>
+    Zhev Education is a leading study abroad consultancy helping students across India pursue higher education in top universities worldwide. We specialise in admissions for the USA, UK, Canada, Ireland, Australia and Europe with complete support for applications, SOPs, LORs, scholarships and visas.
+  </p>
+  <p>
+    Our experts guide students for programs including MS in CS, MBA, Data Science, Engineering, Hospitality, Architecture, Fashion, Design, MBBS, Nursing and more.
+  </p>
+</section>
 
-  <section>
-    <h2>Our Mission</h2>
-    <p>
-      Our mission is to simplify studying abroad for Indian students. The global admissions process can feel confusing – 
-      varying deadlines, SOP requirements, eligibility criteria, scholarship options and visa procedures. 
-      Our goal is to make this journey structured, stress-free and successful by providing clear, end-to-end guidance.
-    </p>
-    <p>
-      We believe in ethical counselling, transparency and accuracy. Every university recommendation and document review 
-      is personalised to ensure the highest acceptance chances. Students receive complete support irrespective of their 
-      destination – USA, UK, Canada, Ireland, Australia or New Zealand.
-    </p>
-  </section>
+<section>
+  <h2>Our Mission</h2>
+  <p>
+    Our mission is to simplify global education for Indian students by offering ethical, transparent and result-driven counselling. We ensure every student receives personalised guidance based on academic background, budget and long-term career aspirations.
+  </p>
+</section>
 
-  <section>
-    <h2>How We Help Students Succeed</h2>
-    <p>
-      Our counselors conduct detailed profile evaluations, identify strengths, suggest improvements, and create 
-      customised application plans. For competitive programs like MS in CS, Data Science, AI/ML, Cybersecurity, 
-      Engineering and MBA, we focus on crafting strong SOPs, achievements and technical resumes that highlight 
-      projects, internships, academic research and professional experience.
-    </p>
-    <p>
-      Visa officers evaluate intent, financial stability and clarity of academic plan. Our mock interviews and 
-      documentation checks help students confidently clear F1 (USA), SDS (Canada), Tier-4 (UK), and other visa processes.
-    </p>
-  </section>
+<section>
+  <h2>Why Students Trust Us</h2>
+  <ul>
+    <li>Accurate university shortlisting</li>
+    <li>Professional SOP & LOR drafting</li>
+    <li>Visa filing and mock interviews</li>
+    <li>Scholarship & loan guidance</li>
+    <li>Pre-departure & post-arrival support</li>
+  </ul>
+</section>
 
-  <section>
-    <h2>Testimonials</h2>
-    <div class="grid">
-      <div class="card">
-        <strong>Neha R.</strong>
-        <p>"Detailed guidance and clear timelines. I received an admission offer from my top choice."</p>
-      </div>
-      <div class="card">
-        <strong>Vikram P.</strong>
-        <p>"Their SOP and visa prep support was spot on and helped me secure a scholarship."</p>
-      </div>
-      <div class="card">
-        <strong>Shweta L.</strong>
-        <p>"Excellent coordination, document review and pre-departure support. Highly professional team."</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Zhev Education Abroad Consultancy</p>
-  </footer>
+<footer style="background:#2F3A56; color:white; text-align:center; padding:12px;">
+  © 2025 Zhev Education Abroad Consultancy
+</footer>
 
 </body>
 </html>

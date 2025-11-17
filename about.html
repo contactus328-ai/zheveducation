@@ -2,57 +2,87 @@
 <html lang="en">
 <head>
 
-  <!-- JSON-LD Structured Data for Countries Page -->
+  <!-- JSON-LD Schema for About Page -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
-    "name": "Zhev Education Abroad Consultancy – Study Destinations",
-    "url": "https://zheveducation.com/countries.html",
-    "logo": "assets/logo.png",
-    "description": "Study abroad guidance for USA, UK, Canada, Australia, Ireland, Europe, and the Middle East with programs including MS in CS, MBA, MBBS, Architecture, Fashion, Sports, Music, Hotel Management and more.",
-    "areaServed": [
-      "USA", "Canada", "UK", "Ireland", "Australia", "New Zealand",
-      "Germany", "France", "Italy", "Netherlands", "Sweden", "Finland", "Spain",
-      "UAE", "Qatar", "Saudi Arabia"
-    ]
+    "name": "Zhev Education Abroad Consultancy",
+    "url": "https://zheveducation.com/about.html",
+    "description": "Zhev Education provides personalised counselling and full study abroad support for USA, UK, Canada, Ireland, Australia, Europe and UAE.",
+    "email": "info@zheveducation.com",
+    "telephone": "+91-9967200345",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    }
   }
   </script>
 
-  <link rel="canonical" href="https://zheveducation.com/countries.html">
+  <link rel="canonical" href="https://zheveducation.com/about.html">
 
-  <title>Top Study Destinations – USA, Canada, UK, Europe, Middle East | Zhev Education</title>
-  <meta name="description" content="Explore USA, UK, Canada, Australia, Ireland, Europe, and Middle East destinations with programs like MS in CS, MBA, MBBS, Hotel Management, Architecture, Fashion, Sports, Music, Game Design and more.">
-  <meta name="keywords" content="study abroad, study in Europe, study in USA, study in Canada, MBBS abroad, hotel management abroad, fashion design abroad, game design abroad, Middle East study programs">
+  <title>About Zhev Education – Study Abroad Consultants India</title>
+  <meta name="description" content="Learn about Zhev Education, India’s trusted study abroad consultancy offering personalised counselling for USA, UK, Canada, Ireland, Australia and Europe.">
+  <meta name="keywords" content="about Zhev Education, study abroad consultants, overseas education India, best study abroad consultancy Mumbai">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css" />
 
   <style>
     header {
       background: #2F3A56;
       padding: 15px;
-      color: #fff;
+      color: white;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
-    .logo { height: 60px; width: auto; }
-    header nav a { color: #fff; margin-left: 20px; text-decoration: none; }
-    .hamburger { display:none; font-size:30px; cursor:pointer; color:#fff; }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
 
     @media (max-width: 768px) {
-      nav { display:none; background:#2F3A56; width:100%; padding:10px; }
-      nav a { display:block; margin:10px 0; }
-      .hamburger { display:block; }
+      nav {
+        display: none;
+        flex-direction: column;
+        background: #2F3A56;
+        padding: 10px;
+        width: 100%;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+
+      .hamburger {
+        display: block;
+      }
     }
   </style>
 
   <script>
     function toggleMenu() {
-      var nav = document.getElementById("mobileNav");
+      const nav = document.getElementById("mobileNav");
       nav.style.display = nav.style.display === "block" ? "none" : "block";
     }
   </script>
@@ -62,8 +92,8 @@
 <body>
 
 <header>
-  <img src="assets/logo.png" alt="Zhev Education Logo" class="logo">
   <span class="hamburger" onclick="toggleMenu()">☰</span>
+
   <nav id="mobileNav">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -74,87 +104,48 @@
 </header>
 
 <section>
-  <h2>Study in USA</h2>
+  <h2>Who We Are</h2>
   <p>
-    The USA offers world-class education with unmatched opportunities in STEM (MS in CS, AI/ML, Cybersecurity,
-    Data Science), Business (MBA), Engineering, Healthcare, Film, Music, Sports, Game Design, Fashion, and more.
-    With OPT and CPT pathways, students gain strong job opportunities post-studies.
+    Zhev Education is a trusted study abroad consultancy helping students across India secure admissions
+    in top universities worldwide. We offer end-to-end guidance for undergraduate and postgraduate programs
+    in the USA, UK, Canada, Ireland, Australia, Europe and the Middle East.
   </p>
-
-  <h2>Study in Canada</h2>
   <p>
-    Canada is ideal for PGWP pathways, high-quality education and permanent residency routes. Popular programs
-    include MS in CS, Data Analytics, Nursing, Hospitality, Culinary Arts, MBBS pathways, Architecture, and
-    Business. Co-op-based courses give strong industry exposure.
-  </p>
-
-  <h2>Study in UK & Ireland</h2>
-  <p>
-    UK offers a 1-year Master’s degree in fields such as Management, Engineering, Fashion, Sports Science,
-    Hospitality, Architecture and Design. Ireland is a booming tech hub — excellent for CS, Data, Cloud,
-    DevOps, Pharmaceuticals and Engineering with a 2-year post-study work visa.
-  </p>
-
-  <h2>Study in Australia & New Zealand</h2>
-  <p>
-    Known for PR-friendly pathways and great salaries in Nursing, Healthcare, IT, Architecture, Sports,
-    Fitness Training, Aviation, Marine, Hotel Management, and Business. Their universities are globally
-    ranked and offer hands-on, practical education.
-  </p>
-
-  <h2>Study in Europe (Germany, France, Italy, Netherlands, Sweden, Finland, Spain)</h2>
-  <p>
-    Europe offers affordable or tuition-free education. Germany excels in Engineering, Robotics, Automotive,
-    IT and Architecture. France is top-tier for Fashion, Luxury, Culinary Arts & Hospitality. Italy leads in
-    Design, Architecture, Fine Arts and Music. Nordic countries excel in Gaming, Psychology, Renewable Energy
-    and Engineering.
-  </p>
-
-  <h2>Study in Middle East (UAE, Qatar, Saudi Arabia)</h2>
-  <p>
-    The Middle East is rapidly becoming a global education hub. Popular programs include Hotel Management,
-    Aviation, Business, Digital Marketing, Sports Management, Fashion Styling, Hair & Beauty Therapy,
-    Game Design, Event Management and Medical Allied courses.
+    Our expertise covers program selection, admissions strategy, SOP and LOR drafting, scholarship support,
+    visa filing assistance and pre-departure planning.
   </p>
 </section>
 
 <section>
-  <h2>Popular Offbeat Programs</h2>
+  <h2>Our Mission</h2>
+  <p>
+    Our mission is to empower students with transparent, ethical and personalised study abroad counselling.
+    We help students identify the right course and country based on academic background, budget and long-term
+    career goals.
+  </p>
+</section>
+
+<section>
+  <h2>Why Choose Us?</h2>
   <ul>
-    <li>Hotel Management & Hospitality</li>
-    <li>Fashion Design & Luxury Brand Management</li>
-    <li>Music, Sound Engineering & Film Production</li>
-    <li>Sports Science, Physiotherapy & Fitness Training</li>
-    <li>Game Design, Animation & VFX</li>
-    <li>Culinary Arts, Baking & Pastry</li>
-    <li>Hair Styling, Cosmetology & Beauty Therapy</li>
-    <li>Architecture, Interior & Urban Design</li>
-    <li>MBBS, Dentistry & Allied Health Sciences</li>
-    <li>Photography & Media Studies</li>
-    <li>Aviation, Cabin Crew & Airport Management</li>
-    <li>Marine Science & Environmental Studies</li>
+    <li>Expert guidance for admission into top global universities</li>
+    <li>Professional SOP & LOR writing support</li>
+    <li>Visa documentation & mock interviews</li>
+    <li>Scholarship & education loan assistance</li>
+    <li>Complete support from application to arrival</li>
   </ul>
 </section>
 
 <section>
-  <h2>Testimonials</h2>
-  <div class="grid">
-    <div class="card">
-      <strong>Priya K.</strong>
-      <p>"I chose Ireland for Data Science — Zhev explained everything clearly and helped me choose the right country."</p>
-    </div>
-    <div class="card">
-      <strong>Rahul D.</strong>
-      <p>"Amazing help selecting Europe for Hotel Management. Their guidance was truly helpful."</p>
-    </div>
-    <div class="card">
-      <strong>Simran B.</strong>
-      <p>"Perfect guidance for studying fashion in Italy — I am grateful!"</p>
-    </div>
-  </div>
+  <h2>Student Success</h2>
+  <p>
+    Students mentored by Zhev Education have secured admissions into leading universities across the USA,
+    UK, Canada, Europe and Australia. Many have also received scholarships, assistantships and strong
+    post-study work opportunities.
+  </p>
 </section>
 
-<footer style="background:#2F3A56; color:white; text-align:center; padding:12px;">
+<footer style="background:#2F3A56; text-align:center; color:white; padding:12px;">
   © 2025 Zhev Education Abroad Consultancy
 </footer>
 

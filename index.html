@@ -3,37 +3,91 @@
 <head>
   <link rel="canonical" href="https://zheveducation.com/">
   <meta name="google-site-verification" content="UDWz14iODOz9mqHBeFAhVdkxtOlqV3TghXXDoQKZwv4" />
+
   <!-- Primary SEO Meta Tags -->
-<meta name="title" content="Zhev Education Abroad – Study Abroad Consultancy India">
-<meta name="description" content="Zhev Education helps students study in the USA, UK, Canada, Ireland, Australia & more. Admissions, visas, SOP/LOR, university selection, and complete study abroad support.">
+  <meta name="title" content="Zhev Education Abroad – Study Abroad Consultancy India">
+  <meta name="description" content="Zhev Education helps students study in the USA, UK, Canada, Ireland, Australia & more. Admissions, visas, SOP/LOR, university selection, and complete study abroad support.">
 
-<!-- Keywords -->
-<meta name="keywords" content="study abroad, overseas education, Zhev Education, study in USA, study in Canada, study in UK, Ireland universities, student visa, abroad counselling India, international education consultancy">
+  <!-- Keywords -->
+  <meta name="keywords" content="study abroad, overseas education, Zhev Education, study in USA, study in Canada, study in UK, Ireland universities, student visa, abroad counselling India, international education consultancy">
 
-<!-- Author -->
-<meta name="author" content="Zhev Education Consultancy">
+  <!-- Author -->
+  <meta name="author" content="Zhev Education Consultancy">
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Zhev Education Abroad – Study Abroad Consultancy India">
-<meta property="og:description" content="Complete study abroad services: admissions, visas, SOP/LOR drafting, university shortlisting, and guidance for USA, UK, Canada, Ireland, Australia.">
-<meta property="og:url" content="https://zheveducation.com">
-<meta property="og:image" content="https://contactus328-ai.github.io/zheveducation/assets/og-image.png"> <!-- You can change this later -->
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zhev Education Abroad – Study Abroad Consultancy India">
+  <meta property="og:description" content="Complete study abroad services: admissions, visas, SOP/LOR drafting, university shortlisting, and guidance for USA, UK, Canada, Ireland, Australia.">
+  <meta property="og:url" content="https://zheveducation.com">
+  <meta property="og:image" content="https://contactus328-ai.github.io/zheveducation/assets/og-image.png">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Zhev Education Abroad – Study Abroad Consultancy India">
-<meta name="twitter:description" content="Trusted study abroad consultancy offering admissions, visas, and university guidance.">
-<meta name="twitter:image" content="https://contactus328-ai.github.io/zheveducation/assets/og-image.png">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zhev Education Abroad – Study Abroad Consultancy India">
+  <meta name="twitter:description" content="Trusted study abroad consultancy offering admissions, visas, and university guidance.">
+  <meta name="twitter:image" content="https://contactus328-ai.github.io/zheveducation/assets/og-image.png">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zhev Education Abroad | Home</title>
+
   <link rel="stylesheet" href="assets/style.css" />
+
+  <style>
+    /* Hamburger styling inside index only */
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        background: #003366;
+        padding: 10px;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .hamburger {
+        display: block;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header h1 {
+        font-size: 18px;
+      }
+    }
+  </style>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("menu");
+      if (nav.style.display === "block") {
+        nav.style.display = "none";
+      } else {
+        nav.style.display = "block";
+      }
+    }
+  </script>
+
 </head>
 <body>
+
   <header>
     <h1>Zhev Education Abroad Consultancy</h1>
-    <nav>
+
+    <!-- Hamburger Icon (Mobile Only) -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <!-- Navigation Menu -->
+    <nav id="menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -51,5 +105,6 @@
   <footer>
     <p>© 2025 Zhev Education Abroad Consultancy</p>
   </footer>
+
 </body>
 </html>

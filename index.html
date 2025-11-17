@@ -10,10 +10,9 @@
     "@type": "EducationalOrganization",
     "name": "Zhev Education Abroad Consultancy",
     "url": "https://zheveducation.com",
-    "logo": "assets/logo.png",
     "description": "Zhev Education helps students study abroad in USA, UK, Canada, Ireland, Australia & New Zealand with admissions, SOP/LOR drafting, university shortlisting and visa guidance.",
     "email": "info@zheveducation.com",
-    "telephone": "+91-9967200345",
+    "telephone": "+91-9594538979",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Mumbai",
@@ -37,14 +36,14 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Zhev Education Abroad – Study Abroad Consultancy India">
   <meta property="og:description" content="Your trusted partner for admissions, visas, SOP/LOR and university selection.">
-  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:image" content="assets/og-image.png">
   <meta property="og:url" content="https://zheveducation.com/">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Zhev Education Abroad – Trusted Study Abroad Consultants">
   <meta name="twitter:description" content="Apply to USA, UK, Canada, Ireland & Australia with expert guidance.">
-  <meta name="twitter:image" content="assets/logo.png">
+  <meta name="twitter:image" content="assets/og-image.png">
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,51 +51,46 @@
   <link rel="stylesheet" href="assets/style.css">
 
   <style>
-    /* Updated lighter professional theme */
     header {
-      background: #2F3A56; /* Premium charcoal navy */
+      background: #2F3A56;
       padding: 15px;
-      color: #fff;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      gap: 20px;
     }
 
-    .logo {
-      height: 60px;
-      width: auto;
-    }
-
-    header nav a {
-      color: #fff;
+    nav a {
+      color: white;
       text-decoration: none;
-      margin-left: 20px;
       font-weight: 500;
     }
 
-    /* Hamburger menu */
     .hamburger {
       display: none;
       font-size: 30px;
-      cursor: pointer;
       color: white;
+      cursor: pointer;
     }
 
     @media (max-width: 768px) {
-      header {
-        flex-direction: row;
-      }
-
       nav {
         display: none;
-        width: 100%;
         background: #2F3A56;
+        width: 100%;
         padding: 10px;
+        flex-direction: column;
+        gap: 10px;
       }
 
       nav a {
         display: block;
-        margin: 10px 0;
       }
 
       .hamburger {
@@ -107,7 +101,7 @@
 
   <script>
     function toggleMenu() {
-      var nav = document.getElementById("mobileNav");
+      const nav = document.getElementById("mobileNav");
       nav.style.display = nav.style.display === "block" ? "none" : "block";
     }
   </script>
@@ -116,10 +110,8 @@
 
 <body>
 
-  <!-- HEADER WITH LOGO -->
+  <!-- CLEAN HEADER WITHOUT LOGO -->
   <header>
-    <img src="assets/logo.png" alt="Zhev Education Logo" class="logo">
-
     <span class="hamburger" onclick="toggleMenu()">☰</span>
 
     <nav id="mobileNav">
@@ -167,9 +159,8 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer style="background:#2F3A56; text-align:center; color:white; padding:12px;">
-    © 2025 Zhev Education Abroad Consultancy — info@zheveducation.com • +91 99672 00345
+  <footer style="background:#2F3A56; color:white; text-align:center; padding:12px;">
+    © 2025 Zhev Education Abroad Consultancy — info@zheveducation.com • +91 95945 38979
   </footer>
 
 </body>

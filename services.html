@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
 
-  <!-- JSON-LD Structured Data for Services Page -->
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -18,9 +23,10 @@
       "Application Filing",
       "SOP Writing",
       "LOR Assistance",
-      "Student Visa Assistance",
+      "Visa Assistance",
       "Scholarship Guidance",
-      "Education Loan Support"
+      "Education Loan Support",
+      "Pre-Departure Assistance"
     ],
     "areaServed": "India"
   }
@@ -28,19 +34,22 @@
 
   <link rel="canonical" href="https://zheveducation.com/services.html">
 
-  <title>Study Abroad Services | Applications, SOP, Visa & Scholarships</title>
-  <meta name="description" content="Explore Zhev Education's services: university shortlisting, SOP/LOR writing, application support, visa assistance, scholarships & pre-departure guidance.">
-  <meta name="keywords" content="study abroad services, SOP writing India, visa assistance, student applications, study abroad consultants Mumbai">
+  <!-- SEO -->
+  <title>Study Abroad Services | SOP, Visa, Scholarships & Applications</title>
+  <meta name="description" content="Explore Zhev Education’s study abroad services including university shortlisting, SOP/LOR drafting, application filing, visa support, scholarships, education loans and pre-departure guidance.">
+  <meta name="keywords" content="study abroad services, SOP writing, LOR drafting, visa support India, scholarship help, application filing, overseas consultancy Mumbai">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/style.css">
 
   <style>
+    /* HEADER */
     header {
       background: #2F3A56;
-      padding: 15px;
+      padding: 15px 20px;
       color: white;
       display: flex;
       justify-content: space-between;
@@ -57,28 +66,98 @@
       color: white;
       text-decoration: none;
       font-weight: 500;
+      font-size: 16px;
     }
 
     .hamburger {
       display: none;
       font-size: 30px;
-      cursor: pointer;
       color: white;
+      cursor: pointer;
     }
 
+    /* SECTIONS */
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #2F3A56;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    section h3 {
+      color: #2F3A56;
+      margin-top: 25px;
+      margin-bottom: 8px;
+      font-size: 22px;
+    }
+
+    section p,
+    section ul {
+      color: #333;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* GRID FOR TESTIMONIALS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #FFFFFF;
+      padding: 20px;
+      border: 1px solid #E5E7EB;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    }
+
+    .card strong {
+      color: #2F3A56;
+      font-size: 17px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #2F3A56;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
     @media (max-width: 768px) {
       nav {
         display: none;
         flex-direction: column;
         background: #2F3A56;
-        padding: 10px;
         width: 100%;
+        padding: 10px;
       }
+
       nav a {
         margin: 10px 0;
       }
+
       .hamburger {
         display: block;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -94,7 +173,7 @@
 
 <body>
 
-<!-- CLEAN MINIMAL HEADER -->
+<!-- HEADER -->
 <header>
   <span class="hamburger" onclick="toggleMenu()">☰</span>
   <nav id="mobileNav">
@@ -106,76 +185,67 @@
   </nav>
 </header>
 
+<!-- MAIN CONTENT -->
 <section>
   <h2>Our Services</h2>
   <p>
-    Zhev Education offers end-to-end study abroad support for students applying to the USA, UK, Canada,
-    Ireland, Australia, New Zealand, Europe and the Middle East. We help you build a strong profile,
-    shortlist the right universities and file applications with accuracy and clarity.
+    Zhev Education provides complete study abroad support for students applying to universities in the USA,
+    UK, Canada, Ireland, Australia, New Zealand, Europe and the Middle East. From shortlisting universities
+    to visa approval, our team ensures a smooth and stress-free admissions journey.
   </p>
-</section>
-
-<section>
-  <h2>What We Offer</h2>
 
   <h3>1. University Shortlisting</h3>
   <p>
-    Based on your academics, test scores, budget and experience, we create a personalised list of
-    Ambitious, Moderate and Safe universities. We specialise in MS in CS, AI/ML, MBA, Healthcare, Data
-    Science, Engineering, Fashion, Architecture, Hospitality, MBBS and more.
+    We curate a personalised list of Ambitious, Moderate and Safe universities based on your academics,
+    experience, test scores, country preferences and budget.
   </p>
 
   <h3>2. SOP & LOR Drafting</h3>
   <p>
-    Our expert writers help you craft impactful Statements of Purpose and Letters of Recommendation,
-    ensuring they highlight your strengths, achievements and program alignment.
+    Our expert writing team creates strong, personalised Statements of Purpose and Letters of Recommendation
+    that highlight your strengths, achievements and program fit.
   </p>
 
   <h3>3. Application Filing</h3>
   <p>
-    We guide you through CommonApp, UCAS, OUAC, UniAssist, university portals and other platforms.
-    Includes essay reviews, resume creation, document uploads and deadline tracking.
+    We assist with university portals, UCAS, CommonApp, OUAC, UniAssist and more. This includes essay reviews,
+    resume creation, document checks, uploads and deadlines.
   </p>
 
   <h3>4. Scholarship Guidance</h3>
   <p>
-    We help you apply for university-funded, government and private scholarships, tuition waivers,
-    RA/TA positions and grants to reduce study costs.
+    We help students identify and apply for university scholarships, government grants, tuition waivers and
+    assistantship opportunities.
   </p>
 
   <h3>5. Visa Assistance</h3>
   <p>
-    From documentation to mock interviews, our visa experts help you file USA, UK, Canada, Ireland,
-    Australia and Dubai student visas with confidence.
+    Our visa team provides document checklists, form assistance and mock interviews for USA, UK, Canada,
+    Ireland, Australia and Dubai student visas.
   </p>
 
-  <h3>6. Pre-Departure Assistance</h3>
+  <h3>6. Education Loan Assistance</h3>
   <p>
-    We guide you on accommodation, forex, insurance, travel planning, packing, arrival support and
-    university onboarding.
+    We guide you through education loan documentation, bank options, collateral requirements and interest rates.
+  </p>
+
+  <h3>7. Pre-Departure Guidance</h3>
+  <p>
+    Includes support for accommodation, forex, travel packing, airport guidance, insurance and arrival planning.
   </p>
 </section>
 
-<section>
-  <h2>Service Packages</h2>
-  <ul>
-    <li><b>Apply Smart:</b> Shortlisting + SOP review + Application check</li>
-    <li><b>Complete Apply:</b> Filing + SOP + LOR + Documents + Guidance</li>
-    <li><b>Visa Secure:</b> Visa filing + documents + mock interviews</li>
-    <li><b>All-Inclusive:</b> Full admissions to pre-departure support</li>
-  </ul>
-</section>
-
+<!-- TESTIMONIALS -->
 <section>
   <h2>Testimonials</h2>
   <div class="grid">
     <div class="card">
       <strong>Devansh R.</strong>
-      <p>"Their SOP team helped me build a strong MS in CS application — received 3 admits."</p>
+      <p>"The SOP team helped me build a strong MS in CS application — got 3 admits!"</p>
     </div>
     <div class="card">
       <strong>Meera S.</strong>
-      <p>"Very helpful with visas — the mock interview boosted my confidence."</p>
+      <p>"Visa mock interview was extremely helpful — cleared in one attempt."</p>
     </div>
     <div class="card">
       <strong>Samir A.</strong>
@@ -184,7 +254,8 @@
   </div>
 </section>
 
-<footer style="background:#2F3A56; color:white; text-align:center; padding:12px;">
+<!-- FOOTER -->
+<footer>
   © 2025 Zhev Education Abroad Consultancy
 </footer>
 

@@ -2,84 +2,98 @@
 <html lang="en">
 <head>
 
-  <!-- JSON-LD Structured Data for Countries Page -->
+  <!-- JSON-LD Schema for Countries Page -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": "Zhev Education Abroad Consultancy – Study Destinations",
     "url": "https://zheveducation.com/countries.html",
-    "description": "Study abroad guidance for USA, UK, Canada, Australia, Ireland, Europe, and Middle East. Programs include MS in CS, MBA, MBBS, hospitality, fashion design, sports, music, architecture, game design and more.",
+    "description": "Study abroad guidance for USA, UK, Canada, Australia, Ireland, Europe, and the Middle East with programs like MS in CS, MBA, MBBS, Architecture, Fashion, Sports, Music, Hotel Management and more.",
     "areaServed": [
-      "USA",
-      "Canada",
-      "UK",
-      "Ireland",
-      "Australia",
-      "New Zealand",
-      "Germany",
-      "France",
-      "Italy",
-      "Netherlands",
-      "Sweden",
-      "Finland",
-      "Spain",
-      "UAE",
-      "Qatar",
-      "Saudi Arabia"
-    ],
-    "knowsAbout": [
-      "Study in Europe",
-      "Study in Middle East",
-      "Offbeat study programs abroad",
-      "MBBS abroad",
-      "Dentistry abroad",
-      "Hotel Management",
-      "Sports science",
-      "Fashion design",
-      "Music production",
-      "Game design courses",
-      "Architecture degrees",
-      "Culinary arts abroad",
-      "Hair styling courses abroad",
-      "Film and media degrees"
+      "USA", "Canada", "UK", "Ireland", "Australia", "New Zealand",
+      "Germany", "France", "Italy", "Netherlands", "Sweden", "Finland", "Spain",
+      "UAE", "Qatar", "Saudi Arabia"
     ]
   }
   </script>
 
   <link rel="canonical" href="https://zheveducation.com/countries.html">
-  <meta name="google-site-verification" content="UDWz14iODOz9mqHBeFAhVdkxtOlqV3TghXXDoQKZwv4" />
 
-  <!-- SEO Meta Tags -->
-  <title>Top Study Destinations – USA, Canada, UK, Europe, Middle East | Zhev Education</title>
-  <meta name="description" content="Explore top study destinations such as USA, Canada, UK, Ireland, Australia, Europe (Germany, France, Italy), and the Middle East (UAE, Qatar). Programs include MS in CS, MBA, MBBS, Hospitality, Fashion, Music, Sports, Architecture & Offbeat fields.">
-  <meta name="keywords" content="study in Europe, study in USA, study in Canada, study in UAE, offbeat study abroad programs, MBBS abroad, hotel management abroad, fashion design abroad, sports management courses, game design courses abroad, architecture degree abroad, Middle East education, Germany study programs">
-  <meta name="author" content="Zhev Education Consultancy" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Top Study Destinations – Zhev Education">
-  <meta property="og:description" content="Study in USA, Canada, UK, Europe and Middle East with guidance for traditional and offbeat programs.">
-  <meta property="og:url" content="https://zheveducation.com/countries.html">
-  <meta property="og:image" content="https://contactus328-ai.github.io/zheveducation/assets/og-image.png">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Top Study Destinations – Zhev Education Abroad Consultancy">
-  <meta name="twitter:description" content="Explore USA, Europe, Canada, UK, Australia and Middle East for traditional & offbeat courses like fashion, music, hotel management & MBBS.">
-  <meta name="twitter:image" content="https://contactus328-ai.github.io/zheveducation/assets/og-image.png">
+  <title>Top Study Abroad Destinations – USA, UK, Canada, Europe & Middle East</title>
+  <meta name="description" content="Explore major study abroad destinations including USA, UK, Canada, Australia, Ireland, Europe and the Middle East with programs like MS in CS, MBA, MBBS, Fashion, Hotel Management, Game Design and more.">
+  <meta name="keywords" content="study abroad, study in Europe, study in USA, study in Canada, MBBS abroad, sports programs abroad, fashion design abroad, hospitality programs, Middle East education">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="assets/style.css">
+
+  <style>
+    header {
+      background: #2F3A56;
+      padding: 15px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        background: #2F3A56;
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
+  </style>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("mobileNav");
+      nav.style.display = nav.style.display === "block" ? "none" : "block";
+    }
+  </script>
 
 </head>
 
 <body>
 
+<!-- CLEAN MINIMAL HEADER -->
 <header>
-  <h1>Countries We Serve</h1>
-  <nav>
+  <span class="hamburger" onclick="toggleMenu()">☰</span>
+
+  <nav id="mobileNav">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
@@ -91,66 +105,62 @@
 <section>
   <h2>Study in USA</h2>
   <p>
-    The USA remains the top choice for STEM programs such as MS in Computer Science, Data Science, 
-    Cybersecurity, MBA, Engineering, Healthcare and even creative fields like Film, Music, Game Design, 
-    Fashion and Sports Management. With globally ranked universities, strong internship culture and 
-    OPT work visas, it provides excellent employment pathways.
+    The USA offers world-leading education with strong career pathways in STEM fields like Computer Science,
+    AI/ML, Robotics, Data Science and Cybersecurity. Popular programs also include MBA, Healthcare, Music,
+    Film, Sports Management, Fashion, Architecture and Game Design. OPT/CPT pathways allow valuable work
+    experience after graduation.
   </p>
 
   <h2>Study in Canada</h2>
   <p>
-    Canada offers career-focused education, PGWP work permits, PR pathways and a large international 
-    student community. Popular programs include MS in CS, Data Analytics, Nursing, Hospitality, Culinary Arts, 
-    Architecture, Sports Science and Business. Many universities offer affordable tuition and co-op options.
+    Canada is ideal for PR pathways and affordable education. Popular programs include MS in CS, Data
+    Analytics, Nursing, Hotel Management, Culinary Arts, Healthcare, Architecture and early childhood
+    education. Co-op programs provide strong industry exposure.
   </p>
 
   <h2>Study in UK & Ireland</h2>
   <p>
-    The UK is known for 1-year Master's programs in management, engineering, fashion, design, sports, architecture 
-    and hospitality. Ireland is a booming tech hub with strong demand for CS, AI/ML, Data, Cybersecurity, Cloud 
-    Computing, Pharmaceuticals and Healthcare programs. Both countries offer post-study work visas.
+    The UK offers 1-year Master’s programs in Management, Engineering, Fashion, Film, Sports Science,
+    Hospitality, Architecture and Business. Ireland is perfect for tech courses like Software Engineering,
+    AI, Data Science, Cybersecurity and Pharmaceuticals, with a 2-year PSW visa.
   </p>
 
   <h2>Study in Australia & New Zealand</h2>
   <p>
-    Popular for programs in Nursing, Hospitality, Architecture, Construction, Marine Science, Sports Science, 
-    Fitness Training, MBBS pathways, Aviation, Business and Information Technology. Universities offer strong 
-    PR-friendly pathways and hands-on training.
+    Known for PR-friendly pathways, Australia & New Zealand offer excellent programs in Nursing, IT,
+    Hospitality, Sports Science, Aviation, Architecture, Marine Science, Health Sciences and Business.
   </p>
 
-  <h2>Study in Europe (Germany, France, Italy, Netherlands, Spain, Sweden, Finland)</h2>
+  <h2>Study in Europe (Germany, France, Italy, Netherlands, Sweden, Finland, Spain)</h2>
   <p>
-    Europe is a top destination for high-quality, low-cost education. Germany offers low or zero tuition fees, 
-    especially for Engineering, Robotics, Automotive, AI, Architecture and IT. France is strong for Fashion, 
-    Luxury Management, Culinary Arts and Hospitality. Italy is known for Design, Architecture, Fine Arts and 
-    Music. The Netherlands, Sweden and Finland offer globally ranked programs in Gaming, Psychology, Sports, 
-    Life Sciences, Renewable Energy and Engineering.
+    Europe offers affordable or free education. Germany excels in Engineering, Robotics, Automotive and IT.
+    France leads in Fashion, Luxury Management, Culinary Arts and Hospitality. Italy is strong in Architecture,
+    Design, Fine Arts and Music. Nordic countries specialise in Renewable Energy, Psychology and Game Design.
   </p>
 
   <h2>Study in the Middle East (UAE, Qatar, Saudi Arabia)</h2>
   <p>
-    The Middle East is emerging as a premium, affordable education destination. Popular programs include 
-    Hotel Management, Aviation, Business, Sports Management, Medical Allied Courses, Fashion Styling, 
-    Hair & Beauty Therapy, Event Management, Digital Marketing and Game Design. UAE is especially known 
-    for hospitality, tourism, aviation and IT programs with strong internship opportunities.
+    With rapidly growing education hubs, Middle Eastern countries offer programs in Aviation, Business,
+    Event Management, Hotel Management, Sports Management, Cosmetology, Hair Styling, IT, Digital Marketing,
+    Game Design, Nursing and Healthcare.
   </p>
 </section>
 
 <section>
-  <h2>Popular Offbeat Programs Abroad</h2>
+  <h2>Popular Offbeat Programs</h2>
   <ul>
     <li>Hotel Management & Hospitality</li>
-    <li>Fashion Design & Styling</li>
-    <li>Music, Sound & Audio Engineering</li>
+    <li>Fashion Design & Luxury Brand Management</li>
+    <li>Music, Sound Engineering & Film Direction</li>
     <li>Sports Science, Physiotherapy & Fitness Training</li>
     <li>Game Design, Animation & VFX</li>
-    <li>Culinary Arts & Baking</li>
-    <li>Hair & Beauty / Cosmetology</li>
-    <li>Architecture & Interior Design</li>
-    <li>Dentistry, MBBS & Allied Health Sciences</li>
-    <li>Photography, Film & Media Studies</li>
-    <li>Marine Science & Aviation</li>
-    <li>Luxury Brand Management</li>
+    <li>Culinary Arts, Baking & Pastry Arts</li>
+    <li>Hair Styling, Cosmetology & Beauty Therapy</li>
+    <li>Architecture, Interior Design & Urban Planning</li>
+    <li>MBBS, Dentistry & Allied Health Sciences</li>
+    <li>Photography, Media & Performing Arts</li>
+    <li>Aviation, Cabin Crew & Airport Management</li>
+    <li>Marine Science & Environmental Studies</li>
   </ul>
 </section>
 
@@ -159,21 +169,21 @@
   <div class="grid">
     <div class="card">
       <strong>Priya K.</strong>
-      <p>"Great clarity on choosing the right country. I chose Ireland for Data Science and it was the best decision."</p>
+      <p>"I selected Ireland for Data Science — amazing clarity and support from Zhev Education."</p>
     </div>
     <div class="card">
       <strong>Rahul D.</strong>
-      <p>"Their guidance for hotel management programs in Europe was very detailed and helpful."</p>
+      <p>"Excellent guidance for Europe — especially for Hotel Management programs."</p>
     </div>
     <div class="card">
       <strong>Simran B.</strong>
-      <p>"I received the best advice for studying fashion design in Italy. Thank you Zhev!"</p>
+      <p>"Perfect recommendations for studying fashion and design in Italy!"</p>
     </div>
   </div>
 </section>
 
-<footer>
-  <p>© 2025 Zhev Education Abroad Consultancy</p>
+<footer style="background:#2F3A56; color:white; text-align:center; padding:12px;">
+  © 2025 Zhev Education Abroad Consultancy
 </footer>
 
 </body>

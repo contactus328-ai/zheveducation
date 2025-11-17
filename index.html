@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-
 <head>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -48,15 +49,19 @@
   <meta name="twitter:description" content="Apply to USA, UK, Canada, Ireland & Australia with expert guidance.">
   <meta name="twitter:image" content="assets/og-image.png">
 
+  <!-- Responsive Settings -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/style.css">
 
+  <!-- Page Styling -->
   <style>
+    /* HEADER */
     header {
       background: #2F3A56;
-      padding: 15px;
+      padding: 15px 20px;
       color: white;
       display: flex;
       justify-content: space-between;
@@ -65,39 +70,109 @@
 
     nav {
       display: flex;
-      align-items: center;
       gap: 20px;
+      align-items: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
       font-weight: 500;
+      font-size: 16px;
     }
 
+    /* HAMBURGER */
     .hamburger {
       display: none;
       font-size: 30px;
-      color: white;
       cursor: pointer;
+      color: white;
     }
 
-    @media (max-width: 768px) {
+    /* HERO */
+    .hero {
+      background: #F5F7FC;
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      color: #2F3A56;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #444;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      background: #2F3A56;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .card {
+      background: #FFFFFF;
+      border: 1px solid #E5E7EB;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    /* TESTIMONIAL NAME */
+    .card strong {
+      color: #2F3A56;
+      font-size: 17px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #2F3A56;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+    @media(max-width: 768px) {
+
       nav {
         display: none;
-        background: #2F3A56;
+        flex-direction: column;
         width: 100%;
         padding: 10px;
-        flex-direction: column;
-        gap: 10px;
+        background: #2F3A56;
       }
 
       nav a {
-        display: block;
+        margin: 10px 0;
       }
 
       .hamburger {
         display: block;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -113,7 +188,7 @@
 
 <body>
 
-  <!-- CLEAN HEADER WITHOUT LOGO -->
+  <!-- HEADER -->
   <header>
     <span class="hamburger" onclick="toggleMenu()">☰</span>
 
@@ -127,25 +202,25 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="hero" style="background:#F5F7FC; padding:50px; text-align:center;">
+  <section class="hero">
     <h2>Study Abroad With Confidence</h2>
     <p>Your trusted partner for global admissions, visas, SOP/LOR drafting, and university shortlisting.</p>
-    <a href="services.html" class="btn" style="background:#2F3A56; color:white; padding:10px 20px; border-radius:5px; text-decoration:none;">Explore Services</a>
+    <a href="services.html" class="btn">Explore Services</a>
   </section>
 
   <!-- ABOUT SECTION -->
   <section style="padding:20px;">
-    <h2>What We Do</h2>
-    <p>
-      Zhev Education provides personalized study-abroad guidance for destinations including the USA, UK, Canada, Ireland, Australia,
-      New Zealand, Europe and UAE. Our services include university shortlisting, SOP/LOR drafting, scholarship guidance,
-      application filing, visa interview preparation and pre-departure support.
+    <h2 style="color:#2F3A56;">What We Do</h2>
+    <p style="color:#333; line-height:1.7;">
+      Zhev Education provides personalised study-abroad guidance for the USA, UK, Canada, Ireland, Australia,
+      New Zealand, Europe, and UAE. We assist with university shortlisting, SOP/LOR drafting, scholarships,
+      application filing, visa interview preparation, and pre-departure support.
     </p>
   </section>
 
-  <!-- TESTIMONIALS SECTION -->
+  <!-- TESTIMONIALS -->
   <section style="padding:20px;">
-    <h2>Testimonials</h2>
+    <h2 style="color:#2F3A56;">Testimonials</h2>
     <div class="grid">
       <div class="card">
         <strong>Rohit K – MS in CS (USA)</strong>
@@ -162,7 +237,8 @@
     </div>
   </section>
 
-  <footer style="background:#2F3A56; color:white; text-align:center; padding:12px;">
+  <!-- FOOTER -->
+  <footer>
     © 2025 Zhev Education Abroad Consultancy — info@zheveducation.com • +91 95945 38979
   </footer>
 

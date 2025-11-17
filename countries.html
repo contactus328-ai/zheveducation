@@ -2,17 +2,23 @@
 <html lang="en">
 <head>
 
-  <!-- JSON-LD Schema for Countries Page -->
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": "Zhev Education Abroad Consultancy – Study Destinations",
     "url": "https://zheveducation.com/countries.html",
-    "description": "Study abroad guidance for USA, UK, Canada, Australia, Ireland, Europe, and the Middle East with programs like MS in CS, MBA, MBBS, Architecture, Fashion, Sports, Music, Hotel Management and more.",
+    "description": "Study abroad guidance for USA, UK, Canada, Australia, Ireland, Europe, and the Middle East with programs like MS in CS, MBA, MBBS, Architecture, Fashion, Game Design, Sports Science, Music, Aviation, Hospitality & more.",
     "areaServed": [
       "USA", "Canada", "UK", "Ireland", "Australia", "New Zealand",
-      "Germany", "France", "Italy", "Netherlands", "Sweden", "Finland", "Spain",
+      "Germany", "France", "Italy", "Netherlands", "Spain", "Sweden",
+      "Finland", "Denmark", "Czech Republic", "Poland",
       "UAE", "Qatar", "Saudi Arabia"
     ]
   }
@@ -20,19 +26,22 @@
 
   <link rel="canonical" href="https://zheveducation.com/countries.html">
 
-  <title>Top Study Abroad Destinations – USA, UK, Canada, Europe & Middle East</title>
-  <meta name="description" content="Explore major study abroad destinations including USA, UK, Canada, Australia, Ireland, Europe and the Middle East with programs like MS in CS, MBA, MBBS, Fashion, Hotel Management, Game Design and more.">
-  <meta name="keywords" content="study abroad, study in Europe, study in USA, study in Canada, MBBS abroad, sports programs abroad, fashion design abroad, hospitality programs, Middle East education">
+  <!-- SEO -->
+  <title>Study Abroad Destinations – USA, Canada, UK, Europe & Middle East</title>
+  <meta name="description" content="Explore top study abroad countries including USA, UK, Canada, Australia, Ireland, Europe and Middle East. Programs include MS in CS, MBA, MBBS, Data Science, Architecture, Fashion, Hospitality, Sports, Game Design and more.">
+  <meta name="keywords" content="study abroad countries, Europe study, USA universities, Canada PR study, MBBS abroad, fashion design abroad, game design programs, hospitality abroad, Middle East education">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/style.css">
 
   <style>
+    /* HEADER */
     header {
       background: #2F3A56;
-      padding: 15px;
+      padding: 15px 20px;
       color: white;
       display: flex;
       justify-content: space-between;
@@ -49,23 +58,78 @@
       color: white;
       text-decoration: none;
       font-weight: 500;
+      font-size: 16px;
     }
 
     .hamburger {
       display: none;
       font-size: 30px;
-      cursor: pointer;
       color: white;
+      cursor: pointer;
     }
 
-    @media (max-width: 768px) {
+    /* CONTENT */
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2F3A56;
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    p, ul {
+      color: #333;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #FFFFFF;
+      padding: 20px;
+      border: 1px solid #E5E7EB;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    }
+
+    .card strong {
+      color: #2F3A56;
+      font-size: 17px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #2F3A56;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+    @media(max-width: 768px) {
       nav {
         display: none;
+        flex-direction: column;
         background: #2F3A56;
         width: 100%;
         padding: 10px;
-        flex-direction: column;
-        gap: 10px;
       }
 
       nav a {
@@ -74,6 +138,10 @@
 
       .hamburger {
         display: block;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -89,7 +157,7 @@
 
 <body>
 
-<!-- CLEAN MINIMAL HEADER -->
+<!-- HEADER -->
 <header>
   <span class="hamburger" onclick="toggleMenu()">☰</span>
 
@@ -102,87 +170,90 @@
   </nav>
 </header>
 
+<!-- MAIN CONTENT -->
 <section>
   <h2>Study in USA</h2>
   <p>
-    The USA offers world-leading education with strong career pathways in STEM fields like Computer Science,
-    AI/ML, Robotics, Data Science and Cybersecurity. Popular programs also include MBA, Healthcare, Music,
-    Film, Sports Management, Fashion, Architecture and Game Design. OPT/CPT pathways allow valuable work
-    experience after graduation.
+    The USA offers globally recognized degrees and strong STEM pathways such as Computer Science, 
+    Data Science, Artificial Intelligence, Robotics, Cybersecurity, Engineering and Business. 
+    Popular programs include MBA, Music Production, Film, Sports Management, Hospitality, Fashion and Game Design.
+    OPT/CPT options allow international students to gain valuable work experience.
   </p>
 
   <h2>Study in Canada</h2>
   <p>
-    Canada is ideal for PR pathways and affordable education. Popular programs include MS in CS, Data
-    Analytics, Nursing, Hotel Management, Culinary Arts, Healthcare, Architecture and early childhood
-    education. Co-op programs provide strong industry exposure.
+    Canada is known for high-quality education, PR pathways, and co-op programs. Popular programs include 
+    Data Analytics, Nursing, Cloud Computing, Architecture, Culinary Arts, Early Childhood Education, 
+    Hospitality and MBA. Affordable tuition and strong job markets make it a top choice.
   </p>
 
   <h2>Study in UK & Ireland</h2>
   <p>
-    The UK offers 1-year Master’s programs in Management, Engineering, Fashion, Film, Sports Science,
-    Hospitality, Architecture and Business. Ireland is perfect for tech courses like Software Engineering,
-    AI, Data Science, Cybersecurity and Pharmaceuticals, with a 2-year PSW visa.
+    The UK offers 1-year Masters programs with excellent academic reputation. Popular courses include 
+    Management, Engineering, Finance, Healthcare, Fashion, Film and Hospitality.  
+    Ireland is ideal for technology careers — Software Engineering, AI, Cybersecurity, Pharmaceuticals 
+    and more — with a 2-year post-study work visa.
   </p>
 
   <h2>Study in Australia & New Zealand</h2>
   <p>
-    Known for PR-friendly pathways, Australia & New Zealand offer excellent programs in Nursing, IT,
-    Hospitality, Sports Science, Aviation, Architecture, Marine Science, Health Sciences and Business.
+    These destinations offer strong PR options and excellent education in Nursing, Sports Science, 
+    Aviation, Architecture, Marine Science, IT, Healthcare and Business.  
+    Safe campuses, internship opportunities and high living standards attract students worldwide.
   </p>
 
-  <h2>Study in Europe (Germany, France, Italy, Netherlands, Sweden, Finland, Spain)</h2>
+  <h2>Study in Europe (Germany, France, Italy, Netherlands & more)</h2>
   <p>
-    Europe offers affordable or free education. Germany excels in Engineering, Robotics, Automotive and IT.
-    France leads in Fashion, Luxury Management, Culinary Arts and Hospitality. Italy is strong in Architecture,
-    Design, Fine Arts and Music. Nordic countries specialise in Renewable Energy, Psychology and Game Design.
+    Europe offers affordable or free education in many countries.  
+    Germany excels in Engineering, Robotics, Mechanical, Automotive and CS.  
+    France is famous for Fashion, Luxury Management, Culinary Arts and Hospitality.  
+    Italy is a leader in Architecture, Design, Fine Arts and Music.  
+    The Netherlands and Scandinavia specialise in Renewable Energy, Psychology and Game Design.
   </p>
 
   <h2>Study in the Middle East (UAE, Qatar, Saudi Arabia)</h2>
   <p>
-    With rapidly growing education hubs, Middle Eastern countries offer programs in Aviation, Business,
-    Event Management, Hotel Management, Sports Management, Cosmetology, Hair Styling, IT, Digital Marketing,
-    Game Design, Nursing and Healthcare.
+    Fast-growing education hubs offering excellent programs in Aviation, Business, Event Management, 
+    IT, Sports, Hospitality, Cosmetology, Hair Styling, Digital Marketing and Healthcare.  
+    Top universities offer modern facilities and globally recognized qualifications.
   </p>
-</section>
 
-<section>
   <h2>Popular Offbeat Programs</h2>
   <ul>
-    <li>Hotel Management & Hospitality</li>
     <li>Fashion Design & Luxury Brand Management</li>
-    <li>Music, Sound Engineering & Film Direction</li>
-    <li>Sports Science, Physiotherapy & Fitness Training</li>
-    <li>Game Design, Animation & VFX</li>
-    <li>Culinary Arts, Baking & Pastry Arts</li>
-    <li>Hair Styling, Cosmetology & Beauty Therapy</li>
+    <li>Hotel Management & Culinary Arts</li>
+    <li>Sports Science & Physiotherapy</li>
+    <li>Game Design, VFX, Animation & Esports</li>
+    <li>Music, Film, Sound Engineering & Performing Arts</li>
     <li>Architecture, Interior Design & Urban Planning</li>
-    <li>MBBS, Dentistry & Allied Health Sciences</li>
-    <li>Photography, Media & Performing Arts</li>
-    <li>Aviation, Cabin Crew & Airport Management</li>
-    <li>Marine Science & Environmental Studies</li>
+    <li>MBBS, Dentistry, Pharmacy & Allied Health Sciences</li>
+    <li>Cosmetology, Hair Styling & Beauty Therapy</li>
+    <li>Aviation, Cabin Crew, Airport Management</li>
+    <li>Marine Science, Environmental Studies, Wildlife Sciences</li>
   </ul>
 </section>
 
+<!-- TESTIMONIALS -->
 <section>
   <h2>Testimonials</h2>
   <div class="grid">
     <div class="card">
       <strong>Priya K.</strong>
-      <p>"I selected Ireland for Data Science — amazing clarity and support from Zhev Education."</p>
+      <p>"Ireland was the perfect choice for Data Science — very helpful guidance from Zhev Education."</p>
     </div>
     <div class="card">
       <strong>Rahul D.</strong>
-      <p>"Excellent guidance for Europe — especially for Hotel Management programs."</p>
+      <p>"Great support for European hospitality programs — helped me shortlist affordable options."</p>
     </div>
     <div class="card">
       <strong>Simran B.</strong>
-      <p>"Perfect recommendations for studying fashion and design in Italy!"</p>
+      <p>"Italy’s fashion programs were exactly what I wanted — got clarity within minutes!"</p>
     </div>
   </div>
 </section>
 
-<footer style="background:#2F3A56; color:white; text-align:center; padding:12px;">
+<!-- FOOTER -->
+<footer>
   © 2025 Zhev Education Abroad Consultancy
 </footer>
 

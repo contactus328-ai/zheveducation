@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
 
-  <!-- JSON-LD Structured Data for Contact Page -->
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": ["ContactPage", "EducationalOrganization"],
     "name": "Zhev Education Abroad Consultancy",
     "url": "https://zheveducation.com/contact.html",
-    "description": "Contact Zhev Education for study abroad counselling, admissions support, SOP/LOR drafting, visa assistance and guidance for USA, UK, Canada, Ireland, Australia, Europe and UAE.",
+    "description": "Contact Zhev Education for admissions, SOP/LOR drafting, university shortlisting, visa guidance, scholarship assistance, and personalised study abroad planning.",
     "telephone": "+91-9594538979",
     "email": "info@zheveducation.com",
     "address": {
@@ -23,19 +28,22 @@
 
   <link rel="canonical" href="https://zheveducation.com/contact.html">
 
-  <title>Contact Zhev Education – Study Abroad Consultants in Mumbai</title>
-  <meta name="description" content="Get in touch with Zhev Education for admissions, SOP/LOR drafting, scholarships, visa support and global study abroad guidance.">
-  <meta name="keywords" content="contact study abroad consultants, Zhev Education contact, overseas education Mumbai, visa assistance India">
+  <!-- SEO -->
+  <title>Contact Zhev Education – Study Abroad Counselling in India</title>
+  <meta name="description" content="Get in touch with Zhev Education for personalised study abroad guidance for USA, UK, Canada, Australia, Ireland, Europe & Middle East. Admissions, SOP/LOR, visa assistance and scholarships.">
+  <meta name="keywords" content="contact study abroad consultants, zhev education contact, overseas education mumbai, visa support, admission help">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/style.css">
 
   <style>
+    /* HEADER */
     header {
       background: #2F3A56;
-      padding: 15px;
+      padding: 15px 20px;
       color: white;
       display: flex;
       justify-content: space-between;
@@ -52,6 +60,7 @@
       color: white;
       text-decoration: none;
       font-weight: 500;
+      font-size: 16px;
     }
 
     .hamburger {
@@ -61,14 +70,81 @@
       color: white;
     }
 
-    @media (max-width: 768px) {
+    /* CONTENT */
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2F3A56;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p, ul {
+      color: #333;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* CONTACT BOX */
+    .contact-box {
+      background: #F5F7FC;
+      padding: 25px;
+      border-radius: 8px;
+      border: 1px solid #E5E7EB;
+      margin-top: 20px;
+    }
+
+    .contact-box p strong {
+      color: #2F3A56;
+    }
+
+    /* GRID FOR TESTIMONIALS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #FFFFFF;
+      padding: 20px;
+      border: 1px solid #E5E7EB;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    }
+
+    .card strong {
+      color: #2F3A56;
+      font-size: 17px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #2F3A56;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+    @media(max-width: 768px) {
       nav {
         display: none;
         flex-direction: column;
         background: #2F3A56;
         padding: 10px;
         width: 100%;
-        gap: 10px;
       }
 
       nav a {
@@ -77,6 +153,10 @@
 
       .hamburger {
         display: block;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -92,7 +172,7 @@
 
 <body>
 
-<!-- CLEAN MINIMAL HEADER -->
+<!-- HEADER -->
 <header>
   <span class="hamburger" onclick="toggleMenu()">☰</span>
 
@@ -105,54 +185,60 @@
   </nav>
 </header>
 
+<!-- MAIN CONTENT -->
 <section>
   <h2>Contact Us</h2>
   <p>
-    Whether you want to study in the USA, UK, Canada, Australia, Ireland, Europe or the Middle East, Zhev Education
-    provides complete support for admissions, documentation, SOP/LOR writing, scholarships, visa filing and
-    pre-departure assistance.
+    Whether you're planning to study in the USA, UK, Canada, Australia, Ireland, Europe or the Middle East,
+    Zhev Education is here to guide you with transparent and personalised counselling.
   </p>
-</section>
 
-<section>
-  <h2>Get in Touch</h2>
-  <p><strong>Email:</strong> <a href="mailto:info@zheveducation.com">info@zheveducation.com</a></p>
-  <p><strong>Phone:</strong> +91 99672 00345</p>
-  <p><strong>Location:</strong> Mumbai, Maharashtra, India</p>
+  <!-- CONTACT INFO BOX -->
+  <div class="contact-box">
+    <p><strong>Email:</strong> <a href="mailto:info@zheveducation.com">info@zheveducation.com</a></p>
+    <p><strong>Phone:</strong> +91 95945 38979</p>
+    <p><strong>Location:</strong> Mumbai, Maharashtra, India</p>
+    <p><strong>Working Hours:</strong> Monday – Saturday, 10 AM to 7 PM</p>
+  </div>
 </section>
 
 <section>
   <h2>Request a Callback</h2>
-  <p>Please share the following details for a personalised study abroad plan:</p>
+  <p>To help you better, please share the following details:</p>
   <ul>
-    <li>Program (MS in CS, MBA, Fashion, Nursing, MBBS, Game Design, etc.)</li>
+    <li>Program (MS, MBA, Fashion, Nursing, MBBS, Hospitality, Sports, Game Design, etc.)</li>
     <li>Preferred countries</li>
-    <li>Academic background</li>
-    <li>Budget & scholarship preference</li>
-    <li>Target intake</li>
+    <li>Your academic background</li>
+    <li>Your budget & scholarship requirement</li>
+    <li>Preferred intake (Spring/Fall/Winter/Summer)</li>
   </ul>
-  <p>Email your details to <strong>info@zheveducation.com</strong> or contact us on WhatsApp.</p>
+  <p>
+    Send the above information to <strong>info@zheveducation.com</strong>  
+    or WhatsApp us for immediate assistance.
+  </p>
 </section>
 
+<!-- TESTIMONIALS -->
 <section>
   <h2>Testimonials</h2>
   <div class="grid">
     <div class="card">
       <strong>Anjali T.</strong>
-      <p>"Quick response and perfect guidance for my applications abroad."</p>
+      <p>"Quick response and perfect guidance for my USA applications."</p>
     </div>
     <div class="card">
       <strong>Karan M.</strong>
-      <p>"Very helpful with visa documents and mock interviews."</p>
+      <p>"Clear visa documentation and mock interview support — very helpful."</p>
     </div>
     <div class="card">
       <strong>Riya S.</strong>
-      <p>"Great support for scholarships — highly recommended."</p>
+      <p>"Amazing scholarship support — highly recommended!"</p>
     </div>
   </div>
 </section>
 
-<footer style="background:#2F3A56; color:white; text-align:center; padding:12px;">
+<!-- FOOTER -->
+<footer>
   © 2025 Zhev Education Abroad Consultancy
 </footer>
 

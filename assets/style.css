@@ -54,44 +54,6 @@ footer {
   padding: 10px;
 }
 
-/* ---------------- Mobile Responsiveness ---------------- */
-@media (max-width: 768px) {
-
-  /* Make navigation links stack better */
-  nav a {
-    display: block;
-    margin: 8px 0;
-  }
-
-  /* Responsive hero section */
-  .hero {
-    padding: 30px;
-    text-align: center;
-  }
-  .hero h2 {
-    font-size: 22px;
-    line-height: 28px;
-  }
-  .hero p {
-    font-size: 16px;
-  }
-
-  /* Make 3-column countries grid responsive */
-  .grid {
-    grid-template-columns: 1fr; /* single column on mobile */
-  }
-
-  /* Improve padding on sections */
-  section {
-    padding: 15px;
-  }
-
-  /* Make cards more comfortable on mobile */
-  .card {
-    padding: 15px;
-    font-size: 16px;
-  }
-}
 /* ---------------- Hamburger Menu Styles ---------------- */
 .hamburger {
   display: none;
@@ -100,8 +62,10 @@ footer {
   color: #fff;
 }
 
-/* Mobile Styles */
+/* ---------------- Mobile Responsiveness ---------------- */
 @media (max-width: 768px) {
+
+  /* HEADER & HAMBURGER */
   header {
     display: flex;
     justify-content: space-between;
@@ -126,5 +90,36 @@ footer {
   nav a {
     display: block;
     margin: 10px 0;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* GRID */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 15px;
+  }
+
+  /* CARD */
+  .card {
+    padding: 15px;
+    font-size: 16px;
   }
 }

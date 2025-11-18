@@ -1,89 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>About Zhev Education — Study Abroad Consultants in Mumbai</title>
-  <meta name="description" content="About Zhev Education — Mumbai based study abroad consultancy providing university shortlisting, SOP/LOR drafting, scholarships and visa guidance for USA, UK, Canada & Australia.">
-  <link rel="canonical" href="https://zheveducation.com/about.html">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png">
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <!-- SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Zhev Education – Trusted Study Abroad Consultants in India</title>
+  <meta name="description" content="Zhev Education is a professional study abroad consultancy helping students achieve admissions to universities in USA, UK, Canada, Australia, Ireland, Europe and UAE with expert counselling, SOP/LOR drafting, and visa support.">
+  <meta name="keywords" content="about Zhev Education, study abroad consultants India, Mumbai education consultancy, international admissions support, SOP LOR experts, study abroad guidance">
+  <meta name="author" content="Zhev Education Consultancy">
+
+  <link rel="stylesheet" href="assets/style.css">
+
   <style>
-    :root{--primary:#2F3A56;--bg:#F5F7FC;--muted:#6b7280;--maxw:1100px}
-    body{margin:0;font-family:Inter,sans-serif;color:#111;background:#fff}
-    header{background:#fff;padding:18px;border-bottom:1px solid #eef0f5;position:sticky;top:0}
-    .nav-inner{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px}
-    .brand{font-family:Poppins;color:var(--primary);font-weight:700}
-    nav a{margin-left:18px;color:#111;font-weight:600}
-    .page{max-width:var(--maxw);margin:0 auto;padding:40px 20px}
-    .lead{background:var(--bg);padding:28px;border-radius:10px}
-    h1{font-family:Poppins;color:var(--primary);margin:0 0 10px}
-    h2{color:var(--primary);margin-top:0}
-    p{color:var(--muted);line-height:1.7}
-    .two{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:18px}
-    .box{background:#fff;border:1px solid #eef0f5;padding:18px;border-radius:10px}
-    footer{padding:28px 20px;text-align:center;color:var(--muted)}
-    @media(max-width:900px){.two{grid-template-columns:1fr}}
+    main { padding: 20px; max-width: 1000px; margin: auto; }
+    h1, h2 { color: #2F3A56; }
+    p { line-height: 1.7; color: #333; margin-bottom: 20px; }
+
+    .highlight-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #e6e6e6;
+      margin-top: 25px;
+      line-height: 1.7;
+    }
+
+    /* NAV / HEADER */
+    header {
+      background: #2F3A56;
+      padding: 15px;
+      color: white;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+
+    @media(max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background: #2F3A56;
+        width: 100%;
+        padding: 10px;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .hamburger { display: block; }
+    }
   </style>
+
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById("mobileNav");
+      nav.style.display = (nav.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
 </head>
+
 <body>
-  <header>
-    <div class="nav-inner">
-      <div class="brand">Zhev Education</div>
-      <nav aria-label="Main nav">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="countries.html">Countries</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="page">
-    <section class="lead" aria-labelledby="about-heading">
-      <h1 id="about-heading">Who we are</h1>
-      <p>Zhev Education is a Mumbai-based study abroad consultancy helping students secure admissions to reputable universities in the USA, UK, Canada, Ireland and Australia. We provide personalised counselling, data-driven shortlists and end-to-end application assistance.</p>
-    </section>
+<!-- HEADER -->
+<header>
+  <div class="nav">
+    <div class="brand">Zhev Education</div>
 
-    <div class="two" style="margin-top:22px">
-      <div>
-        <section class="box">
-          <h2>Our approach</h2>
-          <p>Profile assessment, tiered shortlists, program-specific SOPs, LOR coordination and structured timelines. We focus on transparent, evidence-based guidance to maximise your chances.</p>
-        </section>
+    <span class="hamburger" onclick="toggleNav()">☰</span>
 
-        <section class="box" style="margin-top:18px">
-          <h2>Mission</h2>
-          <p>To simplify international admissions with honest counselling and personalised strategies — empowering students to make informed decisions.</p>
-        </section>
+    <nav id="mobileNav">
+      <a href="index.html" onclick="toggleNav()">Home</a>
+      <a href="about.html" onclick="toggleNav()">About</a>
+      <a href="services.html" onclick="toggleNav()">Services</a>
+      <a href="countries.html" onclick="toggleNav()">Countries</a>
+      <a href="contact.html" onclick="toggleNav()">Contact</a>
+    </nav>
+  </div>
+</header>
 
-        <section class="box" style="margin-top:18px">
-          <h2>Student success</h2>
-          <p>Our students have gained admissions and scholarships across top universities in the USA, UK, Canada, Europe and Australia. We measure success by outcomes and student satisfaction.</p>
-        </section>
-      </div>
+<main class="page">
 
-      <aside>
-        <div class="box">
-          <h3 style="margin-top:0">Quick details</h3>
-          <p style="color:var(--muted)"><strong>Location:</strong> Mumbai, Maharashtra<br><strong>Email:</strong> info@zheveducation.com<br><strong>Phone:</strong> +91 95945 38979</p>
-        </div>
+  <h1>About Zhev Education</h1>
+  <p>
+    Zhev Education is a professional study-abroad consultancy dedicated to guiding Indian students toward global education opportunities. 
+    We assist students in securing admissions to leading universities across the **USA, UK, Canada, Ireland, Australia, New Zealand, Europe, and the Middle East**.
+  </p>
 
-        <div class="box" style="margin-top:18px">
-          <h3 style="margin-top:0">Why choose us</h3>
-          <ul style="color:var(--muted);line-height:1.6;margin:0;padding-left:18px">
-            <li>Ethical counselling</li><li>Profile-first shortlists</li><li>Strong SOP support</li>
-          </ul>
-        </div>
-      </aside>
-    </div>
+  <p>
+    Our counselling process focuses on accuracy, transparency and personalized planning. Whether your goal is to pursue **Computer Science, Data Science, MBA, Medicine, Engineering, Hospitality, Creative Arts, Fashion, Architecture or emerging career fields**, 
+    we help you identify the right program, right country and right career pathway.
+  </p>
 
-    <div class="sr-only" aria-hidden="true">about zhev education, study abroad consultants mumbai, profile assessment, sop experts</div>
-  </main>
+  <div class="highlight-box">
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is to simplify the abroad education journey by offering honest guidance, ethical practices and tailored solutions
+      so every student can confidently pursue international opportunities with clarity and preparation.
+    </p>
+  </div>
 
-  <footer>© 2025 Zhev Education Abroad Consultancy</footer>
+  <div class="highlight-box">
+    <h2>Why Students Trust Us</h2>
+    <p>✔ Accurate university shortlisting based on academics, budget and long-term goals.</p>
+    <p>✔ High-quality SOP/LOR drafting aligned with university expectations.</p>
+    <p>✔ Transparent application planning, scheduling and document handling.</p>
+    <p>✔ Visa guidance with strong success rates for multiple countries.</p>
+    <p>✔ Scholarship research to reduce financial burden on students.</p>
+    <p>✔ Friendly, informative and student-first counselling approach.</p>
+  </div>
+
+  <div class="highlight-box">
+    <h2>Our Expertise</h2>
+    <p>
+      We work with students across diverse study fields including:
+      Computer Science, Engineering, Business, Finance, AI/ML, Nursing, MBBS, Pharmacy, Psychology, Sports Management, Music,
+      Fashion Design, Hospitality, Architecture, Media, Game Design, Culinary Arts, Aviation and many more.
+    </p>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="background:#2F3A56; color:white; text-align:center; padding:15px; margin-top:30px;">
+  © 2025 Zhev Education Abroad Consultancy — info@zheveducation.com • +91 95945 38979
+</footer>
+
 </body>
 </html>

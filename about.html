@@ -6,41 +6,84 @@
   <meta name="description" content="About Zhev Education — Mumbai based study abroad consultancy providing university shortlisting, SOP/LOR drafting, scholarships and visa guidance for USA, UK, Canada & Australia.">
   <link rel="canonical" href="https://zheveducation.com/about.html">
 
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
 
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"Zhev Education Abroad Consultancy","url":"https://zheveducation.com/about.html"}
-  </script>
-
-  <link rel="stylesheet" href="assets/style.css">
-  <style>.container{max-width:900px;margin:0 auto;padding:24px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}</style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root{--primary:#2F3A56;--bg:#F5F7FC;--muted:#6b7280;--maxw:1100px}
+    body{margin:0;font-family:Inter,sans-serif;color:#111;background:#fff}
+    header{background:#fff;padding:18px;border-bottom:1px solid #eef0f5;position:sticky;top:0}
+    .nav-inner{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px}
+    .brand{font-family:Poppins;color:var(--primary);font-weight:700}
+    nav a{margin-left:18px;color:#111;font-weight:600}
+    .page{max-width:var(--maxw);margin:0 auto;padding:40px 20px}
+    .lead{background:var(--bg);padding:28px;border-radius:10px}
+    h1{font-family:Poppins;color:var(--primary);margin:0 0 10px}
+    h2{color:var(--primary);margin-top:0}
+    p{color:var(--muted);line-height:1.7}
+    .two{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:18px}
+    .box{background:#fff;border:1px solid #eef0f5;padding:18px;border-radius:10px}
+    footer{padding:28px 20px;text-align:center;color:var(--muted)}
+    @media(max-width:900px){.two{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
-  <header><nav><a href="index.html">Home</a> <a href="about.html">About</a> <a href="services.html">Services</a> <a href="countries.html">Countries</a> <a href="contact.html">Contact</a></nav></header>
+  <header>
+    <div class="nav-inner">
+      <div class="brand">Zhev Education</div>
+      <nav aria-label="Main nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="countries.html">Countries</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <main class="container">
-    <h1>About Zhev Education</h1>
-
-    <p>Zhev Education is a Mumbai-based study abroad consultancy helping students secure admissions to reputable universities in the USA, UK, Canada, Ireland and Australia. We provide personalised counseling, data-driven shortlists and end-to-end application support.</p>
-
-    <h2>Our approach</h2>
-    <p>We assess profile-fit (academics, tests, experience), create tiered shortlists (ambitious, target, safe), craft program-specific SOPs, coordinate LORs, and support visa readiness. Our process is transparent and results-oriented.</p>
-
-    <h2>Local presence & support</h2>
-    <p>With local Mumbai support, we offer in-person consultations, document verification and mock visa interviews. We also provide scholarship research and education loan guidance.</p>
-
-    <section>
-      <h2>Related Pages</h2>
-      <p><a href="services.html">Services</a> • <a href="countries.html">Destinations</a> • <a href="contact.html">Contact</a></p>
+  <main class="page">
+    <section class="lead" aria-labelledby="about-heading">
+      <h1 id="about-heading">Who we are</h1>
+      <p>Zhev Education is a Mumbai-based study abroad consultancy helping students secure admissions to reputable universities in the USA, UK, Canada, Ireland and Australia. We provide personalised counselling, data-driven shortlists and end-to-end application assistance.</p>
     </section>
 
-    <div class="sr-only" aria-hidden="true">
-      zhev education about, study abroad consultants mumbai, best study abroad agencies india, university shortlisting services, sop experts mumbai
+    <div class="two" style="margin-top:22px">
+      <div>
+        <section class="box">
+          <h2>Our approach</h2>
+          <p>Profile assessment, tiered shortlists, program-specific SOPs, LOR coordination and structured timelines. We focus on transparent, evidence-based guidance to maximise your chances.</p>
+        </section>
+
+        <section class="box" style="margin-top:18px">
+          <h2>Mission</h2>
+          <p>To simplify international admissions with honest counselling and personalised strategies — empowering students to make informed decisions.</p>
+        </section>
+
+        <section class="box" style="margin-top:18px">
+          <h2>Student success</h2>
+          <p>Our students have gained admissions and scholarships across top universities in the USA, UK, Canada, Europe and Australia. We measure success by outcomes and student satisfaction.</p>
+        </section>
+      </div>
+
+      <aside>
+        <div class="box">
+          <h3 style="margin-top:0">Quick details</h3>
+          <p style="color:var(--muted)"><strong>Location:</strong> Mumbai, Maharashtra<br><strong>Email:</strong> info@zheveducation.com<br><strong>Phone:</strong> +91 95945 38979</p>
+        </div>
+
+        <div class="box" style="margin-top:18px">
+          <h3 style="margin-top:0">Why choose us</h3>
+          <ul style="color:var(--muted);line-height:1.6;margin:0;padding-left:18px">
+            <li>Ethical counselling</li><li>Profile-first shortlists</li><li>Strong SOP support</li>
+          </ul>
+        </div>
+      </aside>
     </div>
+
+    <div class="sr-only" aria-hidden="true">about zhev education, study abroad consultants mumbai, profile assessment, sop experts</div>
   </main>
 
-  <footer style="text-align:center;padding:12px;">© 2025 Zhev Education Abroad Consultancy</footer>
+  <footer>© 2025 Zhev Education Abroad Consultancy</footer>
 </body>
 </html>

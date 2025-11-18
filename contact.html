@@ -1,44 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact Zhev Education — Study Abroad Consultants in Mumbai</title>
-  <meta name="description" content="Contact Zhev Education for study abroad counselling, SOP/LOR help, visa assistance and university shortlisting. Based in Mumbai — book a free consultation.">
-  <link rel="canonical" href="https://zheveducation.com/contact.html">
 
-  <link rel="icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <!-- SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Zhev Education – Study Abroad Consultants in Mumbai</title>
+  <meta name="description" content="Contact Zhev Education, India's trusted study abroad consultancy. Get expert guidance on admissions, visas, SOP/LOR drafting, university selection and scholarships. Located in Mumbai.">
+  <meta name="keywords" content="contact study abroad consultants, Mumbai education consultancy, Zhev Education contact, abroad admissions support, visa assistance, study in USA UK Canada Australia Europe">
+  <meta name="author" content="Zhev Education Consultancy">
+
+  <link rel="stylesheet" href="assets/style.css">
+
   <style>
-    :root{--primary:#2F3A56;--muted:#6b7280;--maxw:1100px}
-    body{margin:0;font-family:Inter;color:#111}
-    header{padding:18px;border-bottom:1px solid #eef0f5}
-    .nav{max-width:var(--maxw);margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
-    .page{max-width:var(--maxw);margin:0 auto;padding:40px 20px}
-    h1{font-family:Poppins;color:var(--primary)}
-    .contact-box{background:#fff;border:1px solid #eef0f5;padding:20px;border-radius:10px;max-width:680px}
-    footer{padding:28px 20px;text-align:center;color:var(--muted)}
-  </style>
-</head>
-<body>
-  <header><div class="nav"><div class="brand" style="font-family:Poppins;color:var(--primary)">Zhev Education</div><nav aria-label="Main nav"><a href="index.html">Home</a> <a href="about.html">About</a> <a href="services.html">Services</a> <a href="countries.html">Countries</a> <a href="contact.html">Contact</a></nav></div></header>
+    main { padding: 20px; max-width: 1000px; margin: auto; }
+    h1, h2 { color: #2F3A56; }
+    p { line-height: 1.7; color: #333; }
 
-  <main class="page">
-    <h1>Contact Us</h1>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .contact-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #e6e6e6;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 12px;
+      background: #2F3A56;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .map-box {
+      background: #f8f8f8;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #e6e6e6;
+      text-align: center;
+      color: #555;
+    }
+
+    @media(max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+
+    /* NAV BAR (same as other pages) */
+    header {
+      background: #2F3A56;
+      padding: 15px;
+      color: white;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+
+    @media(max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background: #2F3A56;
+        width: 100%;
+        padding: 10px;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .hamburger { display: block; }
+    }
+  </style>
+
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById("mobileNav");
+      nav.style.display = (nav.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="nav">
+    <div class="brand">Zhev Education</div>
+
+    <span class="hamburger" onclick="toggleNav()">☰</span>
+
+    <nav id="mobileNav">
+      <a href="index.html" onclick="toggleNav()">Home</a>
+      <a href="about.html" onclick="toggleNav()">About</a>
+      <a href="services.html" onclick="toggleNav()">Services</a>
+      <a href="countries.html" onclick="toggleNav()">Countries</a>
+      <a href="contact.html" onclick="toggleNav()">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE CONTENT -->
+<main class="page">
+
+  <h1>Contact Us</h1>
+  <p>
+    Get in touch with Zhev Education for personalised study abroad counselling.  
+    Whether you need help with **university shortlisting, SOP/LOR, applications, visas or scholarship guidance**,  
+    our team is here to assist you at every step.
+  </p>
+
+  <div class="contact-grid">
+
+    <!-- CONTACT DETAILS -->
     <div class="contact-box">
+      <h2>Reach Us</h2>
       <p><strong>Email:</strong> <a href="mailto:info@zheveducation.com">info@zheveducation.com</a></p>
-      <p><strong>Phone:</strong> +91 95945 38979</p>
+      <p><strong>Phone:</strong> <a href="tel:+919594538979">+91 95945 38979</a></p>
       <p><strong>Location:</strong> Mumbai, Maharashtra, India</p>
+      <p><strong>Timings:</strong> Monday – Saturday (10 AM – 7 PM)</p>
     </div>
 
-    <section style="margin-top:20px;max-width:900px">
-      <h2 style="color:var(--primary);font-family:Poppins">Request a callback</h2>
-      <p style="color:var(--muted)">Share preferred program, countries, academic background and target intake. We respond within one business day.</p>
-      <p style="margin-top:12px"><a class="btn" href="mailto:info@zheveducation.com" style="background:var(--primary);color:#fff;padding:10px 16px;border-radius:8px;display:inline-block;font-weight:600">Email us</a></p>
-    </section>
+    <!-- CONTACT FORM -->
+    <div class="contact-box">
+      <h2>Send a Message</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Phone Number" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
 
-    <div class="sr-only" aria-hidden="true">contact study abroad consultants, zhev education contact, book a consultation mumbai</div>
-  </main>
+  </div>
 
-  <footer>© 2025 Zhev Education Abroad Consultancy</footer>
+  <!-- OPTIONAL MAP PLACEHOLDER -->
+  <div class="map-box" style="margin-top: 30px;">
+    📍 <strong>Google Maps location will appear here</strong>  
+    <br>Once the business is verified on Google Maps.
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="background:#2F3A56; color:white; text-align:center; padding:15px; margin-top:30px;">
+  © 2025 Zhev Education Abroad Consultancy — info@zheveducation.com • +91 95945 38979
+</footer>
+
 </body>
 </html>

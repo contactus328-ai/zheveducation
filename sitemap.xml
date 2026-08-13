@@ -26,4 +26,14 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://zheveducation.com/zuvo-privacy-policy.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://zheveducation.com/zuvo-terms-of-service.html</loc>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
